@@ -14,7 +14,7 @@ def edit_data(my_list, setup):
         if text_in in my_list[i]:
             print(f"Режим {setup}: поиск и замена записи")
             text_out = input('Введите новый текст: ')
-            my_list[i].replace(text_in, text_out)
+            my_list[i] = my_list[i].replace(text_in, text_out)
     if flag == False:
         print(f"Текст {text_in} в справочнике не обнаружен!")
     return my_list
