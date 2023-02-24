@@ -6,4 +6,4 @@ def read_data():
 def print_data(my_list, setup):
     print(f"Режим {setup}: просмотр всего списка:")
     for i in my_list:
-        print(i)
+        print(i.strip())
